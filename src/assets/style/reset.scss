@@ -1,0 +1,14 @@
+html,body,#root,.App{
+    height: 100%;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}

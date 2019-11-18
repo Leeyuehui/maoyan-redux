@@ -1,0 +1,41 @@
+@import '../../../assets/style/border.scss';
+@import '../../../assets/style/theme_color.scss';
+.footer{
+    height: .4rem;
+    @include border (#ccc, 1px 0 0 0 );
+    .foot-box{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        li{
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                i{
+                    font-size: .16rem;
+                    color: #666;
+                    margin-bottom: .02rem;
+                }
+                span{
+                    font-size: .12rem;
+                }
+                &.active{
+                    i{
+                        color:$theme_color ;
+                        font-weight: bold;
+                    }
+                    span{
+                        color:$theme_color ;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

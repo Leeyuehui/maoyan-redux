@@ -1,0 +1,76 @@
+@import '../../assets/style/theme_color.scss';
+.container{
+    overflow: auto;
+}
+.content{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    li{
+        padding: .15rem; 
+        display: flex;  
+        .cont-left{
+            width: 20%;
+            img{
+                width: .64rem;
+                height: .9rem;
+            }
+        } 
+        .cont-rig{
+            display: flex;
+            flex-direction: column;
+            padding: .05rem;
+            width: 60%;
+            p{
+                margin: 0;
+                font-size: 17px;
+                color:#333;
+                font-weight: bold;
+                margin-bottom: .07rem;
+            }
+            .audis{
+                font-size: 13px;
+                color: #666;
+                .score{
+                    color: #faaf00;
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            }
+            .main-star{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: .06rem;
+                font-size:.13rem;
+            }
+            .cinema{
+                font-size: .13rem;
+            }
+        }
+        .btn-box{
+            display: flex;
+            .btn{
+                width: .47rem;
+                height: .27rem;
+                outline: none;
+                border: none;
+                font-size: .13rem;
+
+                color: white;
+                background-color: $theme_color;
+                border-radius: .04rem;
+                align-self: center;
+            }
+        }
+    }
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
